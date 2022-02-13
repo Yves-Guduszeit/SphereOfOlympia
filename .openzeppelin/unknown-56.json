@@ -1,0 +1,236 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xbf4738C9622b8351B5F5d753E177141e0d2CF66b",
+      "txHash": "0x498043e349f3316b33b060460f0a836f6172f66b1e64b252a43467566f083d41",
+      "kind": "uups"
+    },
+    {
+      "address": "0x93094146a5Ff3bCCa253e33711e22248a1Ee3362",
+      "txHash": "0x1812312667f256c22a6664df66772969cdeb4006775560c1317f7b6869c84471",
+      "kind": "uups"
+    },
+    {
+      "address": "0xEbA587f5d0C635229F4960419325bf26219745B2",
+      "txHash": "0x4d5cfbb085be48f5427062fd8547e238da4ecdd464a5d8861fbe4cd97b9119f1",
+      "kind": "uups"
+    },
+    {
+      "address": "0xD07B278e3Bb46C115a8Abb6e015ceb0453930d11",
+      "txHash": "0xb01a37107309ab6be48a1065614464c2488b01473b8d554fca7f1d1b31194ea5",
+      "kind": "uups"
+    },
+    {
+      "address": "0x0eA9cB063A5248798aA1ae20f67cD9Eb3E435F24",
+      "txHash": "0x7f39a160b418b5f856eb99bb58bcfb9a7607c6ffbf98eaec3621b8e1c2ae5f7c",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "eacc7b23ee681a5e67a5a58829154e0ff05b05ce23d6da3df97e7b62dd5927da": {
+      "address": "0x20b20B4f070170d2467C50B325A7bB3C07C022eB",
+      "txHash": "0x6cedd559da3cb2c1eae52b9b82f9f6e75045551ccd0a23a9b8d1e30a6667f5c0",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_locks",
+            "type": "t_array(t_struct(Lock)2715_storage)dyn_storage",
+            "src": "contracts/liquidity/LiquidityLocker.sol:37"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_userLpLockIds",
+            "type": "t_mapping(t_address,t_struct(UintSet)1838_storage)",
+            "src": "contracts/liquidity/LiquidityLocker.sol:38"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_userNormalLockIds",
+            "type": "t_mapping(t_address,t_struct(UintSet)1838_storage)",
+            "src": "contracts/liquidity/LiquidityLocker.sol:39"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_lpLockedTokens",
+            "type": "t_struct(AddressSet)1681_storage",
+            "src": "contracts/liquidity/LiquidityLocker.sol:41"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_normalLockedTokens",
+            "type": "t_struct(AddressSet)1681_storage",
+            "src": "contracts/liquidity/LiquidityLocker.sol:42"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "cumulativeLockInfo",
+            "type": "t_mapping(t_address,t_struct(CumulativeLockInfo)2722_storage)",
+            "src": "contracts/liquidity/LiquidityLocker.sol:43"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_tokenToLockIds",
+            "type": "t_mapping(t_address,t_struct(UintSet)1838_storage)",
+            "src": "contracts/liquidity/LiquidityLocker.sol:44"
+          }
+        ],
+        "types": {
+          "t_array(t_struct(Lock)2715_storage)dyn_storage": {
+            "label": "struct LiquidityLocker.Lock[]"
+          },
+          "t_struct(Lock)2715_storage": {
+            "label": "struct LiquidityLocker.Lock",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256"
+              },
+              {
+                "label": "token",
+                "type": "t_address"
+              },
+              {
+                "label": "owner",
+                "type": "t_address"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lockDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "unlockDate",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_struct(UintSet)1838_storage)": {
+            "label": "mapping(address => struct EnumerableSetUpgradeable.UintSet)"
+          },
+          "t_struct(UintSet)1838_storage": {
+            "label": "struct EnumerableSetUpgradeable.UintSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)1380_storage"
+              }
+            ]
+          },
+          "t_struct(Set)1380_storage": {
+            "label": "struct EnumerableSetUpgradeable.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)"
+              }
+            ]
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_struct(AddressSet)1681_storage": {
+            "label": "struct EnumerableSetUpgradeable.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)1380_storage"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_struct(CumulativeLockInfo)2722_storage)": {
+            "label": "mapping(address => struct LiquidityLocker.CumulativeLockInfo)"
+          },
+          "t_struct(CumulativeLockInfo)2722_storage": {
+            "label": "struct LiquidityLocker.CumulativeLockInfo",
+            "members": [
+              {
+                "label": "token",
+                "type": "t_address"
+              },
+              {
+                "label": "factory",
+                "type": "t_address"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}

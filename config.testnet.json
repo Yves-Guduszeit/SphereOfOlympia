@@ -1,0 +1,14 @@
+{
+    "UniswapV2Router02DeployedAddress": "0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3",
+    "IterableMappingDeployedAddress": "0x712Bd77A6Ffa7F89Fda6C025b6a600428A299B34",
+    "OlpTokenDeployedAddress": "0x28A80352ae588d7CeB8aB7D875d87dF648a828e0",
+    "OlympiaDeployedAddress": "0x3B13847204E530288D7D2EB6d440458dE3723071",
+    "ReflectionDistributorDeployedAddress": "0xE583cC3c132786c7a7E467410029392D9aF04f43",
+    "V1TokenDeployedAddress": "0x6E2eE6E48f2010e4cB36C2bD21B8480f095ed096",
+    "V2TokenDeployedAddress": "0xBeD7d9f9505103D613625AC615226602Be435db7",
+    "TokenHolderRegisterDeployedAddress": "0xc1ba66704B5b96218a0CEDB85908534bf2156035",
+    "TokenDelegatorDeployedAddress": "0x393e028A77B5920B8e4EC9A10b0DFAc17D55F419",
+    "TokenClaimerDeployedAddress": "0xbf8214262ae834D3792c1F367E8161d1eA0c0C7c",
+    "LiquidityLockerProxyDeployedAddress": "0xac202874987339876953c7b7Fe501D2453735b94",
+    "LiquidityLockerDeployedAddress": "0xaca0586897feDA6F597f7E62401d4e3C42C59F95"
+}

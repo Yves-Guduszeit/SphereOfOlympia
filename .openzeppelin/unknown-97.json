@@ -1,0 +1,261 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x841095283393fBea46c03a47d93220E83B8e74E4",
+      "txHash": "0x421c29d01a26997b902383501af93177191b529f7047aad88124ed7e2934ac53",
+      "kind": "uups"
+    },
+    {
+      "address": "0x11e0f5852C952592fC7a72C8e1434734C2D2300D",
+      "txHash": "0xadfecbebcae30869174c259ce21621623865cc09fb00cdf3a422ff17a00348c9",
+      "kind": "uups"
+    },
+    {
+      "address": "0x602F2D44909993e79f1D896b11256A267c64bd1B",
+      "txHash": "0x5dd914d7615c77bc2a2441e0678fe60ca35708757f8fdb2f98ffd312ffa42302",
+      "kind": "uups"
+    },
+    {
+      "address": "0x4Da0E16ACE7274B00aD416665a89bd68A25743b9",
+      "txHash": "0xae2fcb9fd33607499cf13e8edddfcfa6b942c8763983bffd32cd3dd534946964",
+      "kind": "uups"
+    },
+    {
+      "address": "0xA275257c1286F8a6c554B0ab63A51111C9f34f04",
+      "txHash": "0xa1075be74518acb87a153f1e50d794a25982a37120e91399e55e905f6ff8be9a",
+      "kind": "uups"
+    },
+    {
+      "address": "0x073676BC9B7E4c105aD8fAE34015E12aAb8ef1dA",
+      "txHash": "0x3421f9e8b40776a383cfe239ffbcd67d392d671156ac8288ce259df197f2c8af",
+      "kind": "uups"
+    },
+    {
+      "address": "0x7d9619A62777fd2032d0b19f23b37f99DdE7F735",
+      "txHash": "0xc3680ccdbbb51fbfb4e0c9c20fdb20b84f39038f7b5a636b5da561b959160c1f",
+      "kind": "uups"
+    },
+    {
+      "address": "0x996f307002b34f038dcCbb644001101993d384Aa",
+      "txHash": "0xbf82480254e29140ac3b1a7c22d9af0f975ef9cd389c6bd9510772351cd700e5",
+      "kind": "uups"
+    },
+    {
+      "address": "0x8ac4e4674338E22AF0bF77F5Aaaab93F10F1d70D",
+      "txHash": "0x71fded929b314873ad23c036021ac74be0c45f582fe4724832d52e2fa477183e",
+      "kind": "uups"
+    },
+    {
+      "address": "0xac202874987339876953c7b7Fe501D2453735b94",
+      "txHash": "0xf302004515d9cdebea4ce69d43940291a24dfbe8f9307f6b4d36637070d58ae8",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "eacc7b23ee681a5e67a5a58829154e0ff05b05ce23d6da3df97e7b62dd5927da": {
+      "address": "0xaca0586897feDA6F597f7E62401d4e3C42C59F95",
+      "txHash": "0x84e25bb945448a7fb6b8bad49e94aff97711e61fd5aec62befa9b56f67af9b38",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_locks",
+            "type": "t_array(t_struct(Lock)3678_storage)dyn_storage",
+            "src": "contracts/liquidity/LiquidityLocker.sol:37"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_userLpLockIds",
+            "type": "t_mapping(t_address,t_struct(UintSet)1838_storage)",
+            "src": "contracts/liquidity/LiquidityLocker.sol:38"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_userNormalLockIds",
+            "type": "t_mapping(t_address,t_struct(UintSet)1838_storage)",
+            "src": "contracts/liquidity/LiquidityLocker.sol:39"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_lpLockedTokens",
+            "type": "t_struct(AddressSet)1681_storage",
+            "src": "contracts/liquidity/LiquidityLocker.sol:41"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_normalLockedTokens",
+            "type": "t_struct(AddressSet)1681_storage",
+            "src": "contracts/liquidity/LiquidityLocker.sol:42"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "cumulativeLockInfo",
+            "type": "t_mapping(t_address,t_struct(CumulativeLockInfo)3685_storage)",
+            "src": "contracts/liquidity/LiquidityLocker.sol:43"
+          },
+          {
+            "contract": "LiquidityLocker",
+            "label": "_tokenToLockIds",
+            "type": "t_mapping(t_address,t_struct(UintSet)1838_storage)",
+            "src": "contracts/liquidity/LiquidityLocker.sol:44"
+          }
+        ],
+        "types": {
+          "t_array(t_struct(Lock)3678_storage)dyn_storage": {
+            "label": "struct LiquidityLocker.Lock[]"
+          },
+          "t_struct(Lock)3678_storage": {
+            "label": "struct LiquidityLocker.Lock",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256"
+              },
+              {
+                "label": "token",
+                "type": "t_address"
+              },
+              {
+                "label": "owner",
+                "type": "t_address"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lockDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "unlockDate",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_struct(UintSet)1838_storage)": {
+            "label": "mapping(address => struct EnumerableSetUpgradeable.UintSet)"
+          },
+          "t_struct(UintSet)1838_storage": {
+            "label": "struct EnumerableSetUpgradeable.UintSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)1380_storage"
+              }
+            ]
+          },
+          "t_struct(Set)1380_storage": {
+            "label": "struct EnumerableSetUpgradeable.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)"
+              }
+            ]
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_struct(AddressSet)1681_storage": {
+            "label": "struct EnumerableSetUpgradeable.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)1380_storage"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_struct(CumulativeLockInfo)3685_storage)": {
+            "label": "mapping(address => struct LiquidityLocker.CumulativeLockInfo)"
+          },
+          "t_struct(CumulativeLockInfo)3685_storage": {
+            "label": "struct LiquidityLocker.CumulativeLockInfo",
+            "members": [
+              {
+                "label": "token",
+                "type": "t_address"
+              },
+              {
+                "label": "factory",
+                "type": "t_address"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}
